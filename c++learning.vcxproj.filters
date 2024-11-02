@@ -54,6 +54,63 @@
     <ClCompile Include="12function_pro.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="13class.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="14constructor and destructor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="15list_initial and static.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="16this_pointer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="17friend.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="18operating_overloading.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="19inheritance.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="20polymorphism.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="21files.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="22template.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="22example.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="23STL.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="person.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="24container_vector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="25string.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="26vector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="27deque.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="28stack._queue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="29list.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="max function.h">

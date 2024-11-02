@@ -130,7 +130,23 @@
     <ClCompile Include="10memory segmentation.cpp" />
     <ClCompile Include="11reference.cpp" />
     <ClCompile Include="12function_pro.cpp" />
+    <ClCompile Include="13class.cpp" />
+    <ClCompile Include="14constructor and destructor.cpp" />
+    <ClCompile Include="15list_initial and static.cpp" />
+    <ClCompile Include="18operating_overloading.cpp" />
+    <ClCompile Include="19inheritance.cpp" />
     <ClCompile Include="1if.cpp" />
+    <ClCompile Include="20polymorphism.cpp" />
+    <ClCompile Include="21files.cpp" />
+    <ClCompile Include="22example.cpp" />
+    <ClCompile Include="22template.cpp" />
+    <ClCompile Include="23STL.cpp" />
+    <ClCompile Include="24container_vector.cpp" />
+    <ClCompile Include="25string.cpp" />
+    <ClCompile Include="26vector.cpp" />
+    <ClCompile Include="27deque.cpp" />
+    <ClCompile Include="28stack._queue.cpp" />
+    <ClCompile Include="29list.cpp" />
     <ClCompile Include="2switch.cpp" />
     <ClCompile Include="3while_do while.cpp" />
     <ClCompile Include="4for.cpp" />
@@ -139,7 +155,10 @@
     <ClCompile Include="7function.cpp" />
     <ClCompile Include="8pointer.cpp" />
     <ClCompile Include="9structure.cpp" />
+    <ClCompile Include="17friend.cpp" />
+    <ClCompile Include="person.h" />
     <ClCompile Include="max.cpp" />
+    <ClCompile Include="16this_pointer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="max function.h" />
