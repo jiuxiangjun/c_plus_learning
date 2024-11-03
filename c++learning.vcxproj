@@ -156,6 +156,10 @@
     <ClCompile Include="08_pointer.cpp" />
     <ClCompile Include="09_structure.cpp" />
     <ClCompile Include="17_friend.cpp" />
+    <ClCompile Include="30_set\30_setandmultiset.cpp" />
+    <ClCompile Include="31_mapandmultimap.cpp" />
+    <ClCompile Include="32_functor.cpp" />
+    <ClCompile Include="33_algorithm.cpp" />
     <ClCompile Include="person.h" />
     <ClCompile Include="max.cpp" />
     <ClCompile Include="16_this_pointer.cpp" />
