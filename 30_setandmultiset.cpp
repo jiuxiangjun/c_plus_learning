@@ -2,42 +2,42 @@
 using namespace std;
 #include<set>
 #include<string>
-//ËùÓÐÔªËØÔÚ²åÈëÊ±»á×Ô¶¯ÅÅÐò
-//¹ØÁªÊ½ÈÝÆ÷£¬µ×²ãÓÃ¶þ²æÊ÷ÊµÏÖ
-//set²»ÔÊÐíÈÝÆ÷ÖÐÓÐÖØ¸´ÔªËØ£¬²åÈëÊý¾ÝµÄÍ¬Ê±»á·µ»Ø²åÈë½á¹û£¬±íÊ¾²åÈëÊÇ·ñ³É¹¦
-//multiset¿ÉÒÔÖØ¸´£¬ÒòÎª²»»á¼ì²âÊý¾Ý£¬¿ÉÒÔÖØ¸´²åÈë
+//æ‰€æœ‰å…ƒç´ åœ¨æ’å…¥æ—¶ä¼šè‡ªåŠ¨æŽ’åº
+//å…³è”å¼å®¹å™¨ï¼Œåº•å±‚ç”¨äºŒå‰æ ‘å®žçŽ°
+//setä¸å…è®¸å®¹å™¨ä¸­æœ‰é‡å¤å…ƒç´ ï¼Œæ’å…¥æ•°æ®çš„åŒæ—¶ä¼šè¿”å›žæ’å…¥ç»“æžœï¼Œè¡¨ç¤ºæ’å…¥æ˜¯å¦æˆåŠŸ
+//multisetå¯ä»¥é‡å¤ï¼Œå› ä¸ºä¸ä¼šæ£€æµ‹æ•°æ®ï¼Œå¯ä»¥é‡å¤æ’å…¥
 
 
-//¹¹Ôì
-//Ä¬ÈÏ£¬¿½±´
+//æž„é€ 
+//é»˜è®¤ï¼Œæ‹·è´
 
-//¸³Öµ
+//èµ‹å€¼
 //=
 
-//²åÈëÉ¾³ý
-//insertÖ»ÓÐÕâ¸ö
+//æ’å…¥åˆ é™¤
+//insertåªæœ‰è¿™ä¸ª
 //clear
 //erase(pos)
 //erase(beg,end)
-//erase(ele)É¾³ýÖµÎªeleµÄÔªËØ
+//erase(ele)åˆ é™¤å€¼ä¸ºeleçš„å…ƒç´ 
 
 
 
 
 
-//´óÐ¡ºÍ½»»»
+//å¤§å°å’Œäº¤æ¢
 //size
 //empty
 //swap
-//²»ÔÊÐíÖØÐÂÖ¸¶¨´óÐ¡
+//ä¸å…è®¸é‡æ–°æŒ‡å®šå¤§å°
 
 
 
-//²éÕÒºÍÍ³¼Æ
-//find(key)²éÕÒkeyÊÇ·ñ´æÔÚ£¬·µ»Ø¸Ã¼üµÄµü´úÆ÷£¬²»´æÔÚ·µ»Øset.end()
-//count(key)Í³¼Ækey¸öÊý
+//æŸ¥æ‰¾å’Œç»Ÿè®¡
+//find(key)æŸ¥æ‰¾keyæ˜¯å¦å­˜åœ¨ï¼Œè¿”å›žè¯¥é”®çš„è¿­ä»£å™¨ï¼Œä¸å­˜åœ¨è¿”å›žset.end()
+//count(key)ç»Ÿè®¡keyä¸ªæ•°
 
-//pair<,>³É¶Ô³öÏÖµÄÊý¾Ý
+//pair<,>æˆå¯¹å‡ºçŽ°çš„æ•°æ®
 //pair<type,type>p(value1,value2)
 //pair<type,type>p=make_pair(value1,value2)
 //p.first   p.second
@@ -46,21 +46,21 @@ using namespace std;
 
 
 
-//ÈÝÆ÷ÅÅÐò£¬¸Ä±äÅÅÐò¹æÔò
-//ÀûÓÃ·Âº¯Êý¸Ä±ä
+//å®¹å™¨æŽ’åºï¼Œæ”¹å˜æŽ’åºè§„åˆ™
+//åˆ©ç”¨ä»¿å‡½æ•°æ”¹å˜
 
 
 //class myClass
 //{
 //public:
-//	bool operator()(int v1,int v2)//µÚÒ»¸öÖØÔØ·ûºÅ£¬µÚ¶þ¸öÊÇ²ÎÊýÁÐ±í
+//	bool operator()(int v1,int v2)//ç¬¬ä¸€ä¸ªé‡è½½ç¬¦å·ï¼Œç¬¬äºŒä¸ªæ˜¯å‚æ•°åˆ—è¡¨
 //	{
-//		return v1 > v2;//·Âº¯ÊýÖØÔØ
+//		return v1 > v2;//ä»¿å‡½æ•°é‡è½½
 //	}
 //};
 //int main()
 //{
-//	set<int, myClass>s2;//·ÅÈë·Âº¯ÊýÀàÐÍ£¬Ö¸¶¨ÅÅÐò¹æÔò´Ó´óµ½Ð¡£¬¼ÙÉèÓÐÒ»¸ös1 setÈÝÆ÷
+//	set<int, myClass>s2;//æ”¾å…¥ä»¿å‡½æ•°ç±»åž‹ï¼ŒæŒ‡å®šæŽ’åºè§„åˆ™ä»Žå¤§åˆ°å°ï¼Œå‡è®¾æœ‰ä¸€ä¸ªs1 setå®¹å™¨
 //
 //	return 0;
 //}
@@ -68,7 +68,7 @@ using namespace std;
 
 
 
-//´æ·Å×Ô¶¨ÒåÊý¾ÝÀàÐÍ£¬ÈçºÎÖ¸¶¨ÅÅÐò¹æÔò
+//å­˜æ”¾è‡ªå®šä¹‰æ•°æ®ç±»åž‹ï¼Œå¦‚ä½•æŒ‡å®šæŽ’åºè§„åˆ™
 //class Person
 //{
 //public:
@@ -84,7 +84,7 @@ using namespace std;
 //class compare
 //{
 //public:
-//	bool operator()(const Person&p1, const Person&p2)const//½«operator()ÉùÃ÷Îªconst³ÉÔ±º¯Êý
+//	bool operator()(const Person&p1, const Person&p2)const//å°†operator()å£°æ˜Žä¸ºconstæˆå‘˜å‡½æ•°
 //	{
 //		return p1.m_Age > p2.m_Age;
 //	}
